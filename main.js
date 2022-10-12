@@ -11,7 +11,7 @@ const showTime = function getRecenttIME(){
     formatterHours = hours >= 10 ? hours : "0" + hours
     formatterMinutes = minutes >= 10 ? minutes : "0" + minutes
     formatterSeconds= seconds >= 10 ? seconds : "0" + seconds
-    displayTime.innerHTML =  formatterHours + " : " + formatterMinutes + " : " + seconds + amPM
+    displayTime.innerHTML =  formatterHours + " : " + formatterMinutes + " : " + seconds + " " +{amPM}
     
 }
 
