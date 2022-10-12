@@ -5,7 +5,7 @@ const showTime = function getRecenttIME(){
     let hours       = date.getHours()
     let minutes     = date.getMinutes()
     let seconds     = date.getSeconds()
-    const amPM          = formatterHours > 12 ? "PM" : "AM"
+    const amPM          = formatterHours >= 12 ? "PM" : "AM"
 
     hours               = hours > 12 ? hours - 12 : hours
     formatterHours      = hours >= 10 ? hours : "0" + hours
